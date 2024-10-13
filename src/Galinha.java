@@ -26,9 +26,10 @@ public class Galinha {
         Period period = Period.between(nascimento, agora);
 
         int anos = period.getYears();
+        int meses = period.getMonths();
         int dias = period.getDays();
 
-        return anos + " anos e " + dias + " dias";
+        return anos + " anos, " + meses + " meses e " + dias + " dias";
     }
 
     public void mostrarDadosNaTela() {

@@ -11,6 +11,6 @@ public class App {
         
         System.out.println("Idade em anos: " + galinha.calculaIdadeGalinha("2022-06-10"));
 
-        System.out.println("Idade em anos e dias: " + galinha.calculaIdadeCompleta("2022-10-09"));
+        System.out.println("Idade em anos e dias: " + galinha.calculaIdadeCompleta("2022-10-12"));
     }
 }
