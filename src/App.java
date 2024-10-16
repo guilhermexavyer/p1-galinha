@@ -1,16 +1,21 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Galinha galinha = new Galinha();
 
-        galinha.nome = "Mimosa";
-        galinha.idade = 2;
-        galinha.cor = "Carijo";
+        //Objeto - Galinha Carijó
+        Galinha carijo = new Galinha();
 
-        galinha.mostrarDadosNaTela();
-        galinha.salvarGalinha();
-        
-        System.out.println("Idade em anos: " + galinha.calculaIdadeGalinha("2022-06-10"));
+        carijo.setNome("Carijó");
+        carijo.setIdade(2);
+        carijo.setCor("Amarelo");
 
-        System.out.println("Idade em anos e dias: " + galinha.calculaIdadeCompleta("2022-10-12"));
+        System.out.println("\nEu cadastrei a galinha com nome: " + carijo.getNome() + ", idade: " + carijo.getIdade() + ", cor: " + carijo.getCor());
+
+        //Objeto - Galinha Mimosa
+        Galinha mimosa = new Galinha();
+        mimosa.setNome("Mimosa");
+        mimosa.setIdade(4);
+        mimosa.setCor("Vermelho");
+
+        System.out.println("\nEu cadastrei a galinha com nome: " + mimosa.getNome() + ", idade: " + mimosa.getIdade() + ", cor: " + mimosa.getCor());
     }
 }
